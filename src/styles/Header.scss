@@ -1,0 +1,86 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-left .logo {
+    width: 100%;
+    height: auto;
+  }
+  
+  .nav-items {
+    display: flex;
+    gap: 18px;
+  }
+  
+  .nav-items button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    color: #6c757d; 
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-items .active {
+    font-weight: bold;
+    color: #333; 
+  }
+  
+  .nav-items button:hover {
+    color: #343a40; 
+  }
+  
+  .nav-right {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .nav-right .icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .nav-right{
+    position: fixed;
+    top: 20%;
+    left: 32px;
+    z-index: 15;
+    display: flex;
+    flex-direction: column;
+  }
+  .risk-button{
+    background-color: transparent; 
+    border: 0;
+    outline: unset;
+    &:hover{
+      background-color: blue;
+    }
+  }
+  .custom-button{
+    color: #333;
+    position: relative;
+    &:hover{
+      color:#fff
+    }
+ 
+    .risk-count{
+      position: absolute;
+      top:0;
+      left: 50%;
+      font-size: 22px;
+    }
+  }
